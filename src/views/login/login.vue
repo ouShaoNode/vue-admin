@@ -57,7 +57,6 @@ export default defineComponent({
 		// const router = useRouter();
 		// router.push("/"); 
   }
-  // 组件的“其余部分”
 })
 </script>
 
