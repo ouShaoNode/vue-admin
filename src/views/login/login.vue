@@ -1,10 +1,8 @@
 <script>
 import { defineComponent, reactive, ref, onMounted } from 'vue'
 import { store } from '@/store'
-import main from '../main/main.vue'
 
 export default defineComponent({
-  components: { main },
 	name: 'login',
   props: {
     loginAction: {

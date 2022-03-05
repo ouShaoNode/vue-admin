@@ -47,7 +47,7 @@ export default defineComponent({
 
 .el-aside:nth-child(1) {
   width: auto;
-  background-color: #304156;
+  background-color: #303133;
   color: var(--el-text-color-primary);
 }
 

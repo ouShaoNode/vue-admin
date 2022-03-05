@@ -1,7 +1,6 @@
-
 <template>
     <el-scrollbar>
-    <el-menu>
+    <el-menu :background-color="'#303133'" :text-color="'white'">
       <memu-item v-for="(menu, key) in allRoutes" :key="key" :menu="menu" />
     </el-menu>
   </el-scrollbar>
@@ -28,7 +27,9 @@ export default defineComponent({
   transition: width .28s;
   width: 250px !important
 }
-
+.el-menu {
+  border: none;
+}
 .menu-nav-scrollbar {
   height: 100%;
 }

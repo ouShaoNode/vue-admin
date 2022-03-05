@@ -1,6 +1,10 @@
 // vuex.d.ts
 import { Store } from 'vuex'
 
+/* RouterState模块 */
+interface RouterState {
+	activeMenuItem: string // 当前选中的menu-item
+}
 /* UserState模块 */
 interface UserState {
 	token: string // token令牌
@@ -11,10 +15,12 @@ interface UserState {
 interface CommonState {
 	msg: string
 }
+
 /* 全局状态 */
 interface RootState {
 	common: CommonState
-  user: UserState
+  user: UserState,
+  router: RouterState
 }
 declare module '@vue/runtime-core' {
   // 声明自己的 store state

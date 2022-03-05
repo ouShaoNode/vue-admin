@@ -6,10 +6,12 @@ NProgress.configure({ showSpinner: false })
 
 // 引入默认的页面
 import defaultPage from './modules'
-
+// 引入用户管理页面
+import userPage from './modules/user'
 // 响应路由
 const routes = [
-  ...defaultPage
+  ...defaultPage,
+  ...userPage
 ]
 
 // 注册路由
@@ -19,7 +21,7 @@ const router = createRouter({
 })
 
 // 路由白名单
-const whiteList = ['/login', '/main']
+const whiteList = ['/login', '/main', '/main/home', '/user/index']
 
 // 路由跳转前的监听操作
 router.beforeEach((to, _from, next) => {
